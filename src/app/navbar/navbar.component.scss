@@ -1,0 +1,37 @@
+.nav-containter {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr;
+  background-color: white;
+  padding: 0 12px 0 12px;
+
+  overflow: hidden;
+  outline: red solid thin;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+
+}
+
+#logo {
+  display: block;
+  align-self: center;
+  outline: red dotted thin;
+  grid-column: 1;
+  text-align: center;
+}
+
+ul {
+  grid-column: 2 / span 2;
+  align-self: center;
+  list-style: none;
+  outline: red dotted thin;
+  li {
+  	margin: 16px;
+    display: inline-block;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
