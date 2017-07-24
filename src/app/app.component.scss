@@ -24,6 +24,83 @@ section .container {
 }
 
 section#card-area {
-	height: 54em;
+	height: 100vh;
 	background: url("http://www.ny.gov/sites/ny.gov/files/thumbnails/image/Spring_Regional_2017NYC_CentralPark.jpg") center center / cover no-repeat transparent;
+
+	.header-area {
+		padding: 30px 1em;
+		max-width: 100%;
+		text-align: center;
+		position: relative;
+
+		&:before {
+			top: 0;
+		    left: 0;
+		    right: 0;
+		    bottom: 0;
+		    opacity: .9;
+		    content: " ";
+		    z-index: 0;
+		    position: absolute;
+		    background-color: #24387e;
+		};
+
+		&:after{
+			top: 100%;
+		    left: 50%;
+		    border: solid transparent;
+		    content: " ";
+		    height: 0;
+		    width: 0;
+		    position: absolute;
+		    pointer-events: none;
+		    border-top-color: #24387e;
+		    border-width: 14px;
+		    margin-left: -14px;
+		    z-index: 0;
+		    opacity: .9;
+		};
+
+		h2, h3, .change-location {
+			margin:0;
+			position: relative;
+			z-index: 2;
+		}
+
+		h2 {
+			font-family: "Oswald-bold",sans-serif;
+		    text-align: center;
+		    color: #d5820d;
+		    margin: 0px;
+		    letter-spacing: 4px;
+		    font-size: 1em;
+		    text-transform: uppercase;
+		}
+		h3 {
+			color: #FFFFFF;
+			font-family: "ProximaNovaExtrabold",sans-serif;
+			font-size: 3em;
+			text-align: center;
+
+		}
+		.change-location{
+			position: absolute;
+			top: 50%;
+		    right: 5%;
+		    margin-left: -15px;
+		    margin-top: -24px;
+		    background: transparent;
+		    border: 1px solid #ffffff;
+		    z-index: 3;
+			font: 13px/60px 'ProximaNovaRegular',sans-serif;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			vertical-align: center;
+			padding: 0 20px;
+			color: #ffffff;
+			cursor: pointer;
+
+		}
+	}
+
 }
