@@ -1,24 +1,24 @@
 section .container {
-	height: 37em;
-	background-image: url(http://www.ny.gov/sites/ny.gov/files/styles/one_stop_bannercustom_user_desktop_1x/public/thumbnails/image/PFL_baby_mother_1_hero.jpg?itok=2xOTjtjP);
-	background-repeat: no-repeat;
-	background-size: cover;
-	outline: red solid;
+  height: 37em;
+  background-image: url(http://www.ny.gov/sites/ny.gov/files/styles/one_stop_bannercustom_user_desktop_1x/public/thumbnails/image/PFL_baby_mother_1_hero.jpg?itok=2xOTjtjP);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  outline: red solid;
 
-	.container-gradient {
-		position: relative;
-		background: url(http://www.ny.gov/sites/all/themes/ny_gov/images/bkg-gradient.png) repeat-y top left;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		z-index: 1;
+  .container-gradient {
+    position: relative;
+    background: url(http://www.ny.gov/sites/all/themes/ny_gov/images/bkg-gradient.png) repeat-y top left;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
 
-	}
-
-	#slogan {
-		color: #FFFFFF;
-		padding-left: 20px;
-		display: block;
-		background-color: rgba(36,56,126,0.3); 
-	}
+  #slogan {
+    color: #FFFFFF;
+    padding-left: 20px;
+    display: block;
+    background-color: rgba(36, 56, 126, 0.3);
+  }
 }
