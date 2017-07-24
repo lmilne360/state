@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FeaturedComponent } from './featured/featured.component';
+import { LocalComponent } from './local/local.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    FeaturedComponent
+    FeaturedComponent,
+    LocalComponent
   ],
   imports: [
     BrowserModule
