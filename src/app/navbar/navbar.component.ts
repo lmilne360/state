@@ -12,4 +12,13 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
   }
 
+  open(e){
+  	var button = e.target.parentElement;
+  	var ul = button.parentElement.nextElementSibling;
+
+
+  	ul.classList.toggle("is-active")
+  	button.classList.toggle("is-active")
+  }
+
 }
