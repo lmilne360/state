@@ -9,5 +9,8 @@ import {LocalComponent} from './local/local.component';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
+
+
+  title = 'Expanding Access to Voter Registration';
+  summary ="Governor Cuomo announced a series of aggressive executive actions designed to expand voter registration opportunities for NY'ers to help combat low voter participation."
 }

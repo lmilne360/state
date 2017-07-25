@@ -1,13 +1,37 @@
-section .container {
-  height: 37em;
+section#intro {
+  height: auto;
+  /**
+  height: 510px;
+  background-color: #000;
+
   background-image: url(http://www.ny.gov/sites/ny.gov/files/styles/one_stop_bannercustom_user_desktop_1x/public/thumbnails/image/PFL_baby_mother_1_hero.jpg?itok=2xOTjtjP);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   outline: red solid;
+  */
 
-  .container-gradient {
+  .container {
     position: relative;
+    height: 510px;
+    background: none;
+    float: none;
+    
+    .wrapper{
+    position: relative;
+    height: 100%;
+    background-image: url(http://www.ny.gov/sites/ny.gov/files/styles/one_stop_bannercustom_user_desktop_1x/public/thumbnails/image/PFL_baby_mother_1_hero.jpg?itok=2xOTjtjP);
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    }
+
+  }
+
+  .gradient {
+    position: absolute;
+    display: block;
     background: url(http://www.ny.gov/sites/all/themes/ny_gov/images/bkg-gradient.png) repeat-y top left;
     top: 0;
     width: 100%;
@@ -16,9 +40,101 @@ section .container {
   }
 
   #slogan {
+    position: absolute;
+    height: 31px;
+    width: 100%;
     color: #FFFFFF;
-    padding-left: 20px;
+    padding-left: 9%;
     display: block;
     background-color: rgba(36, 56, 126, 0.3);
+    z-index: 5;
+    box-sizing: border-box;
+  }
+}
+.info{
+  z-index: 3;
+  position: absolute;
+  background:none;
+  top: 0px;
+  width: 60%;
+  max-width: 600px;
+  padding-top: 60px;
+  margin-left: 9%;
+
+  .title{
+    color: #FFFFFF;
+    margin-top: 60px;
+    font-size: 27px;
+    h2{
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .date {
+    position: relative;
+    z-index: 3;
+    color: #FFFFFF;
+    color: #d5820d;
+    font-size: 13px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+
+  .summary{
+    position: relative;
+    z-index: 3;
+    color: #FFFFFF;
+    line-height: 3em;
+    height: auto;
+
+    p{
+      line-height: 24px;
+      font-size: 18px;
+    }
+  }
+
+  .learn-more{
+    margin-top: 20px;
+    color: #FFFFFF;
+
+    p{
+      position: relative;
+      z-index: 3;
+      padding: 0 20px;
+      display: inline-block;
+      line-height: 48px;
+      font-size: 16px;
+      vertical-align: middle;
+      text-align: center;
+      letter-spacing: 2px;
+      cursor: pointer;
+      border:1px solid;
+      border-color: rgba(255,255,255,0.7);
+    }
+  }
+}
+.overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 768px) {
+
+  .info{
+    position: relative;
+    background-color: black;
+    padding-top: 10px;
+    text-align: center;
+    margin:0;
+    width: 100%;
+    max-width: 768px;
+
   }
 }

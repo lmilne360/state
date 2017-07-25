@@ -1,12 +1,14 @@
 section#card-area {
+  position: relative;
   height: 100vh;
   background: url("http://www.ny.gov/sites/ny.gov/files/thumbnails/image/Spring_Regional_2017NYC_CentralPark.jpg") center center / cover no-repeat transparent;
-
   .header-area {
     padding: 30px 1em;
+    width: 100%;
     max-width: 100%;
     text-align: center;
-    position: relative;
+    position: absolute;
+    box-sizing: border-box;
 
     &:before {
       top: 0;
@@ -43,10 +45,9 @@ section#card-area {
     .change-location {
       margin: 0;
       position: relative;
-      z-index: 2;
     }
 
-    h2 {
+    .title h2 {
       font-family: "Oswald-bold", sans-serif;
       text-align: center;
       color: #d5820d;
@@ -55,7 +56,7 @@ section#card-area {
       font-size: 1em;
       text-transform: uppercase;
     }
-    h3 {
+    .location h3 {
       color: #FFFFFF;
       font-family: "ProximaNovaExtrabold", sans-serif;
       font-size: 3em;
@@ -73,10 +74,19 @@ section#card-area {
       font: 13px/60px 'ProximaNovaRegular', sans-serif;
       text-transform: uppercase;
       letter-spacing: 2px;
-      vertical-align: center;
       padding: 0 20px;
       color: #ffffff;
       cursor: pointer;
     }
   }
+
+  @media only screen and (max-width: 768px) {
+   .change-location
+  {
+    display: inline-block;
+    width: 50%;
+    position: relative !important;
+    margin:12px auto !important;
+  }
+}
 }
